@@ -1,3 +1,4 @@
+from conversion import string_to_decimal
 from conversion import string_to_binary
 from conversion import string_to_octal
 from conversion import string_to_hexadecimal
@@ -18,13 +19,13 @@ def menu():
 
         if pilihan == 1:
             value = int(input('masukkan angka : '))
-            binary_string = string_to_binary(value)
-            print(binary_string)
+            decimal_string = string_to_decimal(value)
+            print(decimal_string)
 
         elif pilihan == 2:
             value = int(input('masukkan angka : '))
-            decimal_string = string_to_binary(value)
-            print(decimal_string)
+            binary_string = string_to_binary(value)
+            print(binary_string)
 
         elif pilihan == 3:
             value = int(input('masukkan angka : '))
@@ -50,3 +51,7 @@ def menu():
 
     finally:
         print('')
+
+if __name__ == "__main__":
+    while (True):
+        menu()

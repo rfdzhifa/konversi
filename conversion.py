@@ -1,4 +1,8 @@
 
+def string_to_decimal(s):
+    decimal = int(s)
+    return decimal
+
 def string_to_binary(s):
     num = int(s)
     return bin(num)[2:]
